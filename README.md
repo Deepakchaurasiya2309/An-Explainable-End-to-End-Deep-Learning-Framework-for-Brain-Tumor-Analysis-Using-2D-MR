@@ -39,3 +39,29 @@ Applied:
 
 ## 🚀 Final Outcome
 Dataset reduced from **45GB → 7GB**, improving efficiency while preserving tumor features.
+
+
+# 🧠 Tumor Segmentation Using Attention U-Net Model
+
+Accurate tumor segmentation is a critical step in automated brain tumor analysis, as it directly affects downstream tasks like classification, feature fusion, and survival prediction. The proposed system uses an **Attention U-Net** architecture to achieve precise tumor localization from 2D MRI slices.
+
+## 🎯 Input
+- MRI slice: `I ∈ R^(H×W×C)`  
+- H, W → spatial dimensions  
+- C = 3 (multi-modal channels: T1, T1ce, FLAIR)
+
+## 🔍 Motivation
+- Tumor regions are small, heterogeneous, and surrounded by complex anatomy.  
+- Traditional U-Net limitations:
+  - Includes irrelevant background  
+  - Reduced sensitivity to small tumors  
+  - Poor localization in low-contrast areas  
+
+**Attention U-Net** solves these by using attention gates to focus on salient tumor regions and suppress irrelevant background.
+
+## ⚙️ Architecture
+- **Encoder:** Extracts hierarchical features using convolutional blocks  
+- **Decoder:** Recovers spatial resolution using transposed convolutions  
+- **Attention Gates:** Filter irrelevant activations in skip connections  
+
+**Convolutional block:**
