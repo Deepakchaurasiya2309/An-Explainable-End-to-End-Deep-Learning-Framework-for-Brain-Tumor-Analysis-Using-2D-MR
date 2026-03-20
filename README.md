@@ -63,5 +63,34 @@ Accurate tumor segmentation is a critical step in automated brain tumor analysis
 - **Encoder:** Extracts hierarchical features using convolutional blocks  
 - **Decoder:** Recovers spatial resolution using transposed convolutions  
 - **Attention Gates:** Filter irrelevant activations in skip connections  
+- M → predicted mask, G → ground truth
 
-**Convolutional block:**
+## ⚡ Training Details
+- Optimizer: Adam  
+- Mixed-precision training for efficiency  
+- Dataset:
+  - Training: 2400 slices  
+  - Validation: 600 slices  
+- Epochs: 5  
+
+## ✅ Advantages of Attention U-Net
+| Model Type | Limitation | Expected Performance |
+|------------|------------|--------------------|
+| Basic CNN | Poor spatial localization | Low |
+| Standard U-Net | No feature selection | Moderate |
+| Fully Deep Models | High computational cost | High but expensive |
+| **Attention U-Net (Proposed)** | Selective focus on tumor regions | Balanced & efficient |
+
+**Key benefits:**
+- Reduces false positives by suppressing background  
+- Enhances detection of small tumors  
+- Improves generalization in limited-data scenarios  
+
+## ✂️ Segmentation-Based ROI Extraction
+- Extracted smallest bounding box around foreground pixels  
+- Cropped to form ROI → removes background  
+- ROI resized to a constant resolution for classification  
+- If no tumor detected, full slice retained  
+
+---
+
