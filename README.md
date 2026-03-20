@@ -1,0 +1,2 @@
+# An-Explainable-End-to-End-Deep-Learning-Framework-for-Brain-Tumor-Analysis-Using-2D-MR
+ It includes Data Preparation &amp;  preprocessing, segmentation using Attention U-Net, ROI extraction, and classification with Hybrid Classification Model. Handcrafted and deep features are fused and used by a Random Forest model for survival prediction. Guided Grad-CAM provides visual explanations, making the system accurate and interpretable.
