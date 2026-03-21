@@ -1,6 +1,80 @@
 # An-Explainable-End-to-End-Deep-Learning-Framework-for-Brain-Tumor-Analysis-Using-2D-MR
  It includes Data Preparation &amp;  preprocessing, segmentation using Attention U-Net, ROI extraction, and classification with Hybrid Classification Model. Handcrafted and deep features are fused and used by a Random Forest model for survival prediction. Guided Grad-CAM provides visual explanations, making the system accurate and interpretable.
 
+# 🧠 Brain Tumor Analysis: Working Procedure
+
+A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor analysis.
+
+---
+
+## 🏗️ Workflow Structure
+
+```text
+        ┌───────────────┐
+        │ Raw 2D MRI    │
+        │ Slices Input  │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 1️⃣ Dataset   │
+        │ Preparation   │
+        │ • Resize &    │
+        │   Normalize   │
+        │ • Slice       │
+        │   Selection   │
+        │ • Augmentation│
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 2️⃣ Segmentation│
+        │ (Attention    │
+        │  U-Net)       │
+        │ • Tumor ROI   │
+        │   Extraction  │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 3️⃣ Tumor     │
+        │ Grading       │
+        │ (Hybrid      │
+        │ ResNet50)     │
+        │ • Classify   │
+        │   No Tumor / │
+        │   LGG / HGG  │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 4️⃣ Feature   │
+        │ Fusion        │
+        │ • Deep +      │
+        │   Spatial     │
+        │   Features    │
+        │ • Multimodal  │
+        │   Vector      │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 5️⃣ Survival   │
+        │ Prediction     │
+        │ (Random Forest)│
+        │ • Risk / Survival│
+        │   Prediction   │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 6️⃣ Explainable│
+        │ AI (Grad-CAM) │
+        │ • Highlight   │
+        │   Important   │
+        │   Tumor Areas │
+        └───────────────┘
+
 # 📊 Dataset Preparation & Preprocessing
 
 ## 🧠 Dataset Overview
@@ -91,6 +165,128 @@ Accurate tumor segmentation is a critical step in automated brain tumor analysis
 - Cropped to form ROI → removes background  
 - ROI resized to a constant resolution for classification  
 - If no tumor detected, full slice retained  
+
+---
+
+# 🎓 Tumor Grading/Classification Using Hybrid Deep Learning
+
+Tumor grading is performed using a **hybrid deep learning architecture** designed to overcome limitations of conventional models in medical imaging, such as limited annotated data and overfitting risks.
+
+## 🔹 Motivation
+- Medical datasets are often small, making training deep CNNs from scratch prone to overfitting.  
+- Traditional CNNs may fail to capture high-level semantic features.  
+- Fully trainable deep models require large datasets and high computational resources.  
+
+The hybrid model leverages **pre-trained networks** to overcome these challenges.
+
+## ⚙️ Model Architecture
+- **Backbone:** Pre-trained ResNet50  
+  - Used as a **fixed feature extractor**  
+  - Backbone parameters frozen to prevent overfitting  
+  - Fully connected layer removed to produce deep features:
+ 
+- **Classification Head:**  
+- Lightweight fully connected layers  
+- ReLU activation + Dropout regularization  
+- Maps deep features into 3 diagnostic classes:
+  1. No Tumor  
+  2. Low-Grade Glioma (LGG)  
+  3. High-Grade Glioma (HGG)
+     
+****  This hybrid approach leverages robust pre-trained features from ResNet50 while focusing on task-specific classification with a lightweight head. It ensures efficient learning on small medical datasets and produces reliable tumor grading predictions.
+
+
+# 🔗 Multimodal Feature Fusion & Survival Prediction
+
+## 🌟 Multimodal Feature Fusion
+Deep CNN features capture semantic information well but may miss quantitative tumor details like size or shape. To address this, **handcrafted spatial features** are added to deep features.
+
+- **Tumor Volume (V):**  
+V = sum of all foreground pixels in the segmentation mask (M_ij)
+
+- **Tumor Area Ratio (R):**  
+R = V / (H × W)  
+(H × W = spatial size of the image)
+
+- **Feature Fusion:**  
+F_fusion = [F_deep, V, R]  
+This combines **semantic (deep features)** and **geometric/spatial information**, improving predictive accuracy.
+
+---
+
+## 🏥 Survival Prediction
+Survival prediction uses the fused multimodal features from deep learning and tumor morphology.
+
+- **Fused Feature Vector:**  
+F_fusion = {F_deep, V_tumor, R_area}  
+  - F_deep = high-level deep features from ResNet50 (size 2048)  
+  - V_tumor = tumor volume from segmentation  
+  - R_area = normalized tumor area ratio  
+
+- **Prediction Model:** Random Forest Classifier  
+s_hat = f_RF(F_fusion)  
+  - f_RF = ensemble of decision trees  
+  - Final prediction = average output of all trees  
+
+**Advantages of Random Forest:**
+- Robust against overfitting  
+- Handles high-dimensional features  
+- Interpretable predictions  
+
+**Summary:**  
+By combining **deep semantic features** and **handcrafted tumor features**, the model predicts survival accurately while considering both tumor appearance and morphology.
+
+
+
+# 🔍 Explainable Artificial Intelligence (Grad-CAM)
+
+To improve **interpretability and reliability**, Grad-CAM is employed to identify regions of the MRI image that most influence the model’s predictions.
+
+## 🌟 How Grad-CAM Works
+- Grad-CAM analyzes **gradients** flowing through the **final convolutional layer** to generate a **localization map**.  
+- **Class Activation Map (LCAM):**  
+LCAM = ReLU(Σ α_k * A_k)  
+  - A_k = kth feature map of the last convolutional layer  
+  - α_k = weight assigned to each feature map  
+
+- **Weight Calculation (α_k):**  
+α_k = (1 / Z) * Σ ∂y_c / ∂A_k  
+  - y_c = class score  
+  - Z = normalization factor over spatial dimensions  
+
+- The resulting **heatmap** is superimposed on the original MRI slice to highlight regions contributing most to the prediction.
+
+---
+
+## 📏 Evaluation Metrics
+To measure how well the highlighted regions correspond to actual tumor regions, the following metrics are used:
+
+- **Overlap Ratio:**  
+Overlap Ratio = |H ∩ M| / |M|  
+
+- **Intersection over Union (IoU):**  
+IoU = |H ∩ M| / |H ∪ M|  
+
+- **Dice Coefficient:**  
+Dice = 2 * |H ∩ M| / (|H| + |M|)  
+
+Where:  
+- H = binarized Grad-CAM heatmap  
+- M = ground truth tumor mask  
+
+**Results:**  
+- IoU = 0.467  
+- Dice = 0.637  
+- Overlap Ratio = 0.553  
+
+---
+
+## ✅ Summary
+The Grad-CAM visualization confirms that the model **effectively focuses on clinically relevant tumor regions**, validating the reliability and interpretability of the proposed method.
+
+# 🧠 Brain Tumor Analysis: Working Procedure
+
+A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor analysis.
 
 ---
 
