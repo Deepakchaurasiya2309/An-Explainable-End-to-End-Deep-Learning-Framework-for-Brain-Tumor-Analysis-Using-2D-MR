@@ -7,6 +7,13 @@ A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor an
 
 ---
 
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" 
+    alt="Brain MRI Visualization" 
+    width="50%" 
+    length="50%"
+    />
+ 
 ## 🏗️ Workflow Structure
 
 ```text
@@ -74,13 +81,6 @@ A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor an
         │   Important   │
         │   Tumor Areas │
         └───────────────┘
-
-<p align="center">
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" 
-    alt="Brain MRI Visualization" 
-    width="50%" 
-    length="50%"
-    />
 
 
 
