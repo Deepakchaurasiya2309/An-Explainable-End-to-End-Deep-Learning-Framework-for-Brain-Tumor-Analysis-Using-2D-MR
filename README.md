@@ -4,22 +4,23 @@
 <p align="center">
   <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" 
     alt="Brain MRI Visualization" 
-    width="50%" 
-    length="50%"
+    width="30%" 
+    length="30%"
     />
  <p align="center">
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJlcmJwNjAzbzg4YWdkenhicmFqanI1OHI0cmV1YnRhM2x1cW52MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vn9JVHDAzYw1O/giphy.gif" 
     alt="Brain MRI Visualization" 
-    width="50%" 
-    length="50%"
+    width="30%" 
+    length="30%"
     />
-  <h2>🧠 Brain Tumor Analysis: Working Procedure</h2>
+ <h2>🧠 Brain Tumor Analysis: Working Procedure</h2>
 
-<div style="display: flex; flex-direction: column; gap: 10px;">
+<div>
 
   <!-- Step 1 -->
-  <div style="display: flex; align-items: center; background-color: #f0f8ff; border-radius: 8px; padding: 10px;">
-    <img src="images/mri.png" width="32" style="margin-right: 10px;">
+  <div>
+    <img src="<img width="1366" height="768" alt="Overrall_Project_pipline_Output" src="https://github.com/user-attachments/assets/ec447036-9970-4067-92d1-69241336af01" />
+" width="32" alt="MRI Icon">
     <div>
       <b>1️⃣ Raw 2D MRI Slices Input</b><br>
       Resize, normalize, select slices, augment
@@ -27,8 +28,9 @@
   </div>
 
   <!-- Step 2 -->
-  <div style="display: flex; align-items: center; background-color: #e6ffe6; border-radius: 8px; padding: 10px;">
-    <img src="images/dataset.png" width="32" style="margin-right: 10px;">
+  <div>
+    <img src="![Data_Preperation_and_Preprocessing](https://github.com/user-attachments/assets/aea9ba9c-7178-4da3-9d94-9094a04dcc75)
+" width="32" alt="Dataset Icon">
     <div>
       <b>2️⃣ Dataset Preparation</b><br>
       Resize, normalize, augment, split training/validation
@@ -36,8 +38,9 @@
   </div>
 
   <!-- Step 3 -->
-  <div style="display: flex; align-items: center; background-color: #fff0f5; border-radius: 8px; padding: 10px;">
-    <img src="images/segmentation.png" width="32" style="margin-right: 10px;">
+  <div>
+    <img src="<img width="960" height="636" alt="Segmentation_output" src="https://github.com/user-attachments/assets/aa9c9053-d4dd-41c6-99e5-18f3de7bac25" />
+" width="32" alt="Segmentation Icon">
     <div>
       <b>3️⃣ Tumor Segmentation (Attention U-Net)</b><br>
       ROI extraction, binary tumor mask
@@ -45,8 +48,9 @@
   </div>
 
   <!-- Step 4 -->
-  <div style="display: flex; align-items: center; background-color: #ffffe0; border-radius: 8px; padding: 10px;">
-    <img src="images/tumor.png" width="32" style="margin-right: 10px;">
+  <div>
+    <img src="![Classification_Hybrid _Model](https://github.com/user-attachments/assets/28191032-6167-47fb-892f-f84e19a6ff3e)
+" width="32" alt="Tumor Icon">
     <div>
       <b>4️⃣ Tumor Grading (Hybrid ResNet50)</b><br>
       Classify No Tumor / LGG / HGG
@@ -54,8 +58,9 @@
   </div>
 
   <!-- Step 5 -->
-  <div style="display: flex; align-items: center; background-color: #f0fff0; border-radius: 8px; padding: 10px;">
-    <img src="images/fusion.png" width="32" style="margin-right: 10px;">
+  <div>
+    <img src="![Survival Prediction And Explainable AI](https://github.com/user-attachments/assets/a6a0cfb8-4502-4019-95b3-4dffeccc4159)
+" width="32" alt="Fusion Icon">
     <div>
       <b>5️⃣ Feature Fusion & Survival Prediction</b><br>
       Deep + spatial features → Random Forest prediction
@@ -63,8 +68,9 @@
   </div>
 
   <!-- Step 6 -->
-  <div style="display: flex; align-items: center; background-color: #f5f5f5; border-radius: 8px; padding: 10px;">
-    <img src="images/gradcam.png" width="32" style="margin-right: 10px;">
+  <div>
+    <img src="<img width="1366" height="482" alt="Survival Prediction                                  Explainable AI" src="https://github.com/user-attachments/assets/f04a5775-0324-4c64-adc5-1e61d8acf9e8" />
+" width="32" alt="Grad-CAM Icon">
     <div>
       <b>6️⃣ Explainable AI (Grad-CAM)</b><br>
       Highlight important tumor regions
