@@ -22,7 +22,7 @@
   <!-- Step 1 -->
   <div>
     <img src="<img width="1366" height="768" alt="Overrall_Project_pipline_Output" src="https://github.com/user-attachments/assets/ec447036-9970-4067-92d1-69241336af01" />
-" width="32" alt="MRI ">
+" width="50" alt="MRI ">
     <div>
       <b>1️⃣ Raw 2D MRI Slices </b><br>
       Resize, normalize, select slices, augment
@@ -32,7 +32,7 @@
   <!-- Step 2 -->
   <div>
     <img src="![Data_Preperation_and_Preprocessing](https://github.com/user-attachments/assets/aea9ba9c-7178-4da3-9d94-9094a04dcc75)
-" width="32" alt="Dataset Icon">
+" width="50" alt="Dataset Icon">
     <div>
       <b>2️⃣ Dataset Preparation</b><br>
       Resize, normalize, augment, split training/validation
@@ -42,7 +42,7 @@
   <!-- Step 3 -->
   <div>
     <img src="<img width="960" height="636" alt="Segmentation_output" src="https://github.com/user-attachments/assets/aa9c9053-d4dd-41c6-99e5-18f3de7bac25" />
-" width="32" alt="Segmentation ">
+" width="62" alt="Segmentation ">
     <div>
       <b>3️⃣ Tumor Segmentation (Attention U-Net)</b><br>
       ROI extraction, binary tumor mask
