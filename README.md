@@ -5,13 +5,13 @@
   <div style="display: flex; justify-content: center; gap: 20px;">
     <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" 
          alt="Brain MRI Visualization" 
-         width="35%" />
+         width="33%" />
     <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJlcmJwNjAzbzg4YWdkenhicmFqanI1OHI0cmV1YnRhM2x1cW52MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vn9JVHDAzYw1O/giphy.gif" 
          alt="Brain MRI Visualization" 
-         width="30%" />
+         width="33%" />
          <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW85dmxtdzJxenRwcmQxOHJ2MjZkaXNwaHRibmlxbXM4b3piOGU1diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26FmPPUf4XbpURNdu/giphy.gif" 
          alt="Brain MRI Visualization" 
-         width="35%" />
+         width="33%" />
    
   </div>
 </p>
