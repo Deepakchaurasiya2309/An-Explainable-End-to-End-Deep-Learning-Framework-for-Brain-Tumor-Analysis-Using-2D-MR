@@ -79,7 +79,7 @@ A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor an
 <img src="https://www.freepik.com/free-photo/3d-medical-showing-brain-with-tumor-growing_5286650.htm#fromView=search&page=1&position=1&uuid=89124d53-3bf4-4d46-ac84-c03b2d39997e&query=2d+brain+tumor+mri++png" width="50"> Resize, normalize, slice selection, augmentation
 
 <h3>2️⃣ Dataset Preparation</h3>
-<img src="https://www.freepik.com/free-photo/doctor-reading-brain-mri-x-ray-result_2767782.htm#fromView=search&page=1&position=30&uuid=cc914011-8012-4830-8306-0a0797896ce3&query=brain+tumor+data+preparation" width="50"> Resize, normalize, augment, split training/validation
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" width="50"> Resize, normalize, augment, split training/validation
 
 # 📊 Dataset Preparation & Preprocessing
 
