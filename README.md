@@ -25,7 +25,7 @@
   <div>
     <img src="https://github.com/user-attachments/assets/ec447036-9970-4067-92d1-69241336af01" 
          width="250" alt="MRI" style="vertical-align: middle;">
-    <div>
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
     <b>1️⃣ Raw 2D MRI Slices</b><br>
     Resize, normalize, select slices, augment
   </div>
