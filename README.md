@@ -75,68 +75,12 @@ A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor an
         │   Tumor Areas │
         └───────────────┘
 
-<h2>🧠 Brain Tumor Analysis: Working Procedure</h2>
 <h3>1️⃣ Raw 2D MRI Slices Input</h3>
 <img src="https://www.freepik.com/free-photo/3d-medical-showing-brain-with-tumor-growing_5286650.htm#fromView=search&page=1&position=1&uuid=89124d53-3bf4-4d46-ac84-c03b2d39997e&query=2d+brain+tumor+mri++png" width="50"> Resize, normalize, slice selection, augmentation
 
 <h3>2️⃣ Dataset Preparation</h3>
-<img src="images/dataset.png" width="50"> Resize, normalize, augment, split training/validation
+<img src="https://www.freepik.com/free-photo/doctor-reading-brain-mri-x-ray-result_2767782.htm#fromView=search&page=1&position=30&uuid=cc914011-8012-4830-8306-0a0797896ce3&query=brain+tumor+data+preparation" width="50"> Resize, normalize, augment, split training/validation
 
-  <!-- Step 1 -->
-  <div style="display: flex; align-items: center; background-color: #f0f8ff; border-radius: 8px; padding: 10px;">
-    <img src="https://www.freepik.com/free-photo/3d-medical-showing-brain-with-tumor-growing_5286650.htm#fromView=search&page=1&position=1&uuid=89124d53-3bf4-4d46-ac84-c03b2d39997e&query=2d+brain+tumor+mri++png" width="32" style="margin-right: 10px;">
-    <div>
-      <b>1️⃣ Raw 2D MRI Slices Input</b><br>
-      Resize, normalize, select slices, augment
-    </div>
-  </div>
-
-  <!-- Step 2 -->
-  <div style="display: flex; align-items: center; background-color: #e6ffe6; border-radius: 8px; padding: 10px;">
-    <img src="images/dataset.png" width="32" style="margin-right: 10px;">
-    <div>
-      <b>2️⃣ Dataset Preparation</b><br>
-      Resize, normalize, augment, split training/validation
-    </div>
-  </div>
-
-  <!-- Step 3 -->
-  <div style="display: flex; align-items: center; background-color: #fff0f5; border-radius: 8px; padding: 10px;">
-    <img src="images/segmentation.png" width="32" style="margin-right: 10px;">
-    <div>
-      <b>3️⃣ Tumor Segmentation (Attention U-Net)</b><br>
-      ROI extraction, binary tumor mask
-    </div>
-  </div>
-
-  <!-- Step 4 -->
-  <div style="display: flex; align-items: center; background-color: #ffffe0; border-radius: 8px; padding: 10px;">
-    <img src="images/tumor.png" width="32" style="margin-right: 10px;">
-    <div>
-      <b>4️⃣ Tumor Grading (Hybrid ResNet50)</b><br>
-      Classify No Tumor / LGG / HGG
-    </div>
-  </div>
-
-  <!-- Step 5 -->
-  <div style="display: flex; align-items: center; background-color: #f0fff0; border-radius: 8px; padding: 10px;">
-    <img src="images/fusion.png" width="32" style="margin-right: 10px;">
-    <div>
-      <b>5️⃣ Feature Fusion & Survival Prediction</b><br>
-      Deep + spatial features → Random Forest prediction
-    </div>
-  </div>
-
-  <!-- Step 6 -->
-  <div style="display: flex; align-items: center; background-color: #f5f5f5; border-radius: 8px; padding: 10px;">
-    <img src="images/gradcam.png" width="32" style="margin-right: 10px;">
-    <div>
-      <b>6️⃣ Explainable AI (Grad-CAM)</b><br>
-      Highlight important tumor regions
-    </div>
-  </div>
-
-</div>
 # 📊 Dataset Preparation & Preprocessing
 
 ## 🧠 Dataset Overview
