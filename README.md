@@ -75,17 +75,12 @@ A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor an
         │   Tumor Areas │
         └───────────────┘
 
-<!-- Brain Tumor MRI Animation GIF -->
-<div style="text-align: center; margin: 20px 0;">
-    <h3>🧠 Brain Tumor MRI Visualization</h3>
-    <img 
-        src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" 
-        alt="Brain MRI Animation" 
-        width="400" 
-        style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"
-    >
-    <p>This GIF illustrates the type of MRI scanning used in the dataset input stage.</p>
-</div>
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" 
+    alt="Brain MRI Visualization" 
+    width="50%" 
+    length="50%"
+    />
 
 
 
