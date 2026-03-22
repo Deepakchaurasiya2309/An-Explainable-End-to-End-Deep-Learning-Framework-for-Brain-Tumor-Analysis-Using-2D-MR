@@ -15,71 +15,71 @@
    
   </div>
 </p>
- <h2>🧠 Brain Tumor Analysis: Working Procedure</h2>
 
-<div>
+
+<h2>🧠 Brain Tumor Analysis: Workflow</h2>
+
+<div style="display: flex; flex-direction: column; gap: 15px; font-family: Arial, sans-serif;">
 
   <!-- Step 1 -->
   <div>
-    <img src="<img width="1366" height="768" alt="Overrall_Project_pipline_Output" src="https://github.com/user-attachments/assets/ec447036-9970-4067-92d1-69241336af01" />
-" width="50" alt="MRI ">
-    <div>
-      <b>1️⃣ Raw 2D MRI Slices </b><br>
-      Resize, normalize, select slices, augment
-    </div>
+    <img src="https://github.com/user-attachments/assets/ec447036-9970-4067-92d1-69241336af01" 
+         width="100" alt="MRI" style="vertical-align: middle;">
+    <b>1️⃣ Raw 2D MRI Slices</b> → Resize, normalize, select slices, augment
   </div>
+
+  <!-- Arrow -->
+  <div style="text-align: center;">⬇️</div>
 
   <!-- Step 2 -->
   <div>
-    <img src="![Data_Preperation_and_Preprocessing](https://github.com/user-attachments/assets/aea9ba9c-7178-4da3-9d94-9094a04dcc75)
-" width="50" alt="Dataset Icon">
-    <div>
-      <b>2️⃣ Dataset Preparation</b><br>
-      Resize, normalize, augment, split training/validation
-    </div>
+    <img src="https://github.com/user-attachments/assets/aea9ba9c-7178-4da3-9d94-9094a04dcc75" 
+         width="100" alt="Dataset" style="vertical-align: middle;">
+    <b>2️⃣ Dataset Preparation</b> → Resize, normalize, augment, split training/validation
   </div>
+
+  <!-- Arrow -->
+  <div style="text-align: center;">⬇️</div>
 
   <!-- Step 3 -->
   <div>
-    <img src="<img width="960" height="636" alt="Segmentation_output" src="https://github.com/user-attachments/assets/aa9c9053-d4dd-41c6-99e5-18f3de7bac25" />
-" width="62" alt="Segmentation ">
-    <div>
-      <b>3️⃣ Tumor Segmentation (Attention U-Net)</b><br>
-      ROI extraction, binary tumor mask
-    </div>
+    <img src="https://github.com/user-attachments/assets/aa9c9053-d4dd-41c6-99e5-18f3de7bac25" 
+         width="100" alt="Segmentation" style="vertical-align: middle;">
+    <b>3️⃣ Tumor Segmentation (Attention U-Net)</b> → ROI extraction, binary tumor mask
   </div>
+
+  <!-- Arrow -->
+  <div style="text-align: center;">⬇️</div>
 
   <!-- Step 4 -->
   <div>
-    <img src="![Classification_Hybrid _Model](https://github.com/user-attachments/assets/28191032-6167-47fb-892f-f84e19a6ff3e)
-" width="32" alt="Tumor Icon">
-    <div>
-      <b>4️⃣ Tumor Grading (Hybrid ResNet50)</b><br>
-      Classify No Tumor / LGG / HGG
-    </div>
+    <img src="https://github.com/user-attachments/assets/28191032-6167-47fb-892f-f84e19a6ff3e" 
+         width="100" alt="Tumor Grading" style="vertical-align: middle;">
+    <b>4️⃣ Tumor Grading (Hybrid ResNet50)</b> → Classify No Tumor / LGG / HGG
   </div>
+
+  <!-- Arrow -->
+  <div style="text-align: center;">⬇️</div>
 
   <!-- Step 5 -->
   <div>
-    <img src="![Survival Prediction And Explainable AI](https://github.com/user-attachments/assets/a6a0cfb8-4502-4019-95b3-4dffeccc4159)
-" width="32" alt="Fusion">
-    <div>
-      <b>5️⃣ Feature Fusion & Survival Prediction</b><br>
-      Deep + spatial features → Random Forest prediction
-    </div>
+    <img src="https://github.com/user-attachments/assets/a6a0cfb8-4502-4019-95b3-4dffeccc4159" 
+         width="100" alt="Feature Fusion" style="vertical-align: middle;">
+    <b>5️⃣ Feature Fusion & Survival Prediction</b> → Deep + spatial features → Random Forest
   </div>
+
+  <!-- Arrow -->
+  <div style="text-align: center;">⬇️</div>
 
   <!-- Step 6 -->
   <div>
-    <img src="<img width="1366" height="482" alt="Survival Prediction                                  Explainable AI" src="https://github.com/user-attachments/assets/f04a5775-0324-4c64-adc5-1e61d8acf9e8" />
-" width="32" alt="Grad-CAM ">
-    <div>
-      <b>6️⃣ Explainable AI (Grad-CAM)</b><br>
-      Highlight important tumor regions
-    </div>
+    <img src="https://github.com/user-attachments/assets/f04a5775-0324-4c64-adc5-1e61d8acf9e8" 
+         width="100" alt="Grad-CAM" style="vertical-align: middle;">
+    <b>6️⃣ Explainable AI (Grad-CAM)</b> → Highlight important tumor regions
   </div>
 
 </div>
+
  # 🧠 Brain Tumor Analysis: Working Procedure
 
 A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor analysis.
