@@ -2,17 +2,15 @@
  It includes Data Preparation &amp;  preprocessing, segmentation using Attention U-Net, ROI extraction, and classification with Hybrid Classification Model. Handcrafted and deep features are fused and used by a Random Forest model for survival prediction. Guided Grad-CAM provides visual explanations, making the system accurate and interpretable.
 
 <p align="center">
-  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" 
-    alt="Brain MRI Visualization" 
-    width="30%" 
-    length="30%"
-    />
- <p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJlcmJwNjAzbzg4YWdkenhicmFqanI1OHI0cmV1YnRhM2x1cW52MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vn9JVHDAzYw1O/giphy.gif" 
-    alt="Brain MRI Visualization" 
-    width="30%" 
-    length="30%"
-    />
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDU1MTFzNmo0aWU4NjdqbGRwamRlYWpwZ2ZsN3cxcnc1aDI2YmM1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RqxdeXRrOiGic/giphy.gif" 
+         alt="Brain MRI Visualization" 
+         width="30%" />
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJlcmJwNjAzbzg4YWdkenhicmFqanI1OHI0cmV1YnRhM2x1cW52MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vn9JVHDAzYw1O/giphy.gif" 
+         alt="Brain MRI Visualization" 
+         width="30%" />
+  </div>
+</p>
  <h2>🧠 Brain Tumor Analysis: Working Procedure</h2>
 
 <div>
@@ -20,9 +18,9 @@
   <!-- Step 1 -->
   <div>
     <img src="<img width="1366" height="768" alt="Overrall_Project_pipline_Output" src="https://github.com/user-attachments/assets/ec447036-9970-4067-92d1-69241336af01" />
-" width="32" alt="MRI Icon">
+" width="32" alt="MRI ">
     <div>
-      <b>1️⃣ Raw 2D MRI Slices Input</b><br>
+      <b>1️⃣ Raw 2D MRI Slices </b><br>
       Resize, normalize, select slices, augment
     </div>
   </div>
@@ -40,7 +38,7 @@
   <!-- Step 3 -->
   <div>
     <img src="<img width="960" height="636" alt="Segmentation_output" src="https://github.com/user-attachments/assets/aa9c9053-d4dd-41c6-99e5-18f3de7bac25" />
-" width="32" alt="Segmentation Icon">
+" width="32" alt="Segmentation ">
     <div>
       <b>3️⃣ Tumor Segmentation (Attention U-Net)</b><br>
       ROI extraction, binary tumor mask
@@ -60,7 +58,7 @@
   <!-- Step 5 -->
   <div>
     <img src="![Survival Prediction And Explainable AI](https://github.com/user-attachments/assets/a6a0cfb8-4502-4019-95b3-4dffeccc4159)
-" width="32" alt="Fusion Icon">
+" width="32" alt="Fusion">
     <div>
       <b>5️⃣ Feature Fusion & Survival Prediction</b><br>
       Deep + spatial features → Random Forest prediction
@@ -70,7 +68,7 @@
   <!-- Step 6 -->
   <div>
     <img src="<img width="1366" height="482" alt="Survival Prediction                                  Explainable AI" src="https://github.com/user-attachments/assets/f04a5775-0324-4c64-adc5-1e61d8acf9e8" />
-" width="32" alt="Grad-CAM Icon">
+" width="32" alt="Grad-CAM ">
     <div>
       <b>6️⃣ Explainable AI (Grad-CAM)</b><br>
       Highlight important tumor regions
