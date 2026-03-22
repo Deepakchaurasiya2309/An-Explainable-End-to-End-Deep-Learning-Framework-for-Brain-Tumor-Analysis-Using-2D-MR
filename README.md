@@ -25,8 +25,7 @@
   <div>
     <img src="https://github.com/user-attachments/assets/ec447036-9970-4067-92d1-69241336af01" 
          width="250" alt="MRI" style="vertical-align: middle;">
-     <b>1️⃣ Raw 2D MRI Slices</b><br>
-    Resize, normalize, select slices, augment
+     <b>1️⃣ Raw 2D MRI Slices</b><br> Resize, normalize, select slices, augment
   </div>
 
   <!-- Arrow -->
