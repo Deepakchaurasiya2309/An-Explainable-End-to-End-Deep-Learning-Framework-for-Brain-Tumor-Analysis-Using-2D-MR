@@ -27,8 +27,6 @@
          width="250" alt="MRI" style="vertical-align: middle;">
     <b>1️⃣ Raw 2D MRI Slices</b> → Resize, normalize, select slices, augment
   </div>
-
-
   <!-- Arrow -->
   <div style="text-align: center;">⬇️</div>
 
