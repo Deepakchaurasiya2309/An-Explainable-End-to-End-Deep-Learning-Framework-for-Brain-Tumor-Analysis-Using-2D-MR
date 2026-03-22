@@ -24,7 +24,7 @@
   <!-- Step 1 -->
   <div>
     <img src="https://github.com/user-attachments/assets/ec447036-9970-4067-92d1-69241336af01" 
-         width="100" alt="MRI" style="vertical-align: middle;">
+         width="150" alt="MRI" style="vertical-align: middle;">
     <b>1️⃣ Raw 2D MRI Slices</b> → Resize, normalize, select slices, augment
   </div>
 
@@ -34,7 +34,7 @@
   <!-- Step 2 -->
   <div>
     <img src="https://github.com/user-attachments/assets/aea9ba9c-7178-4da3-9d94-9094a04dcc75" 
-         width="100" alt="Dataset" style="vertical-align: middle;">
+         width="150" alt="Dataset" style="vertical-align: middle;">
     <b>2️⃣ Dataset Preparation</b> → Resize, normalize, augment, split training/validation
   </div>
 
@@ -44,7 +44,7 @@
   <!-- Step 3 -->
   <div>
     <img src="https://github.com/user-attachments/assets/aa9c9053-d4dd-41c6-99e5-18f3de7bac25" 
-         width="100" alt="Segmentation" style="vertical-align: middle;">
+         width="150" alt="Segmentation" style="vertical-align: middle;">
     <b>3️⃣ Tumor Segmentation (Attention U-Net)</b> → ROI extraction, binary tumor mask
   </div>
 
@@ -54,7 +54,7 @@
   <!-- Step 4 -->
   <div>
     <img src="https://github.com/user-attachments/assets/28191032-6167-47fb-892f-f84e19a6ff3e" 
-         width="100" alt="Tumor Grading" style="vertical-align: middle;">
+         width="150" alt="Tumor Grading" style="vertical-align: middle;">
     <b>4️⃣ Tumor Grading (Hybrid ResNet50)</b> → Classify No Tumor / LGG / HGG
   </div>
 
@@ -64,7 +64,7 @@
   <!-- Step 5 -->
   <div>
     <img src="https://github.com/user-attachments/assets/a6a0cfb8-4502-4019-95b3-4dffeccc4159" 
-         width="100" alt="Feature Fusion" style="vertical-align: middle;">
+         width="150" alt="Feature Fusion" style="vertical-align: middle;">
     <b>5️⃣ Feature Fusion & Survival Prediction</b> → Deep + spatial features → Random Forest
   </div>
 
@@ -74,7 +74,7 @@
   <!-- Step 6 -->
   <div>
     <img src="https://github.com/user-attachments/assets/f04a5775-0324-4c64-adc5-1e61d8acf9e8" 
-         width="100" alt="Grad-CAM" style="vertical-align: middle;">
+         width="150" alt="Grad-CAM" style="vertical-align: middle;">
     <b>6️⃣ Explainable AI (Grad-CAM)</b> → Highlight important tumor regions
   </div>
 
