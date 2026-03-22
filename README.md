@@ -81,7 +81,7 @@ A clear visual overview of the **end-to-end workflow** for 2D MRI brain tumor an
 
   <!-- Step 1 -->
   <div style="display: flex; align-items: center; background-color: #f0f8ff; border-radius: 8px; padding: 10px;">
-    <img src="images/mri.png" width="32" style="margin-right: 10px;">
+    <img src="https://www.freepik.com/free-photo/3d-medical-showing-brain-with-tumor-growing_5286650.htm#fromView=search&page=1&position=1&uuid=89124d53-3bf4-4d46-ac84-c03b2d39997e&query=2d+brain+tumor+mri++png" width="32" style="margin-right: 10px;">
     <div>
       <b>1️⃣ Raw 2D MRI Slices Input</b><br>
       Resize, normalize, select slices, augment
